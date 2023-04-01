@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FirebaseService } from '@namitoyokota/services';
+import { FirebaseService, Test } from '@namitoyokota/services';
 
 @Component({
     selector: 'app-root',
@@ -7,6 +7,7 @@ import { FirebaseService } from '@namitoyokota/services';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+    test: Test = new Test();
     firebase: FirebaseService = new FirebaseService();
 
     echo(text?: string, value?: string): void {
