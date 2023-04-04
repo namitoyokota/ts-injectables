@@ -1,6 +1,6 @@
 {
     "name": "@namitoyokota/services",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Angular service library for myself",
     "author": {
         "name": "Namito Yokota",
