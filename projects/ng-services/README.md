@@ -1,4 +1,4 @@
-# @namitoyokota/ng-services
+# NgServices
 
 [![Publish Package to NPM](https://github.com/namitoyokota/ng-services/actions/workflows/publish.yml/badge.svg)](https://github.com/namitoyokota/services/actions/workflows/publish.yml)
 

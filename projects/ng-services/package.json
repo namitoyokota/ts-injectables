@@ -1,6 +1,6 @@
 {
-    "name": "@namitoyokota/services",
-    "version": "0.0.5",
+    "name": "@namitoyokota/ng-services",
+    "version": "0.0.6",
     "description": "Angular service library for myself",
     "author": {
         "name": "Namito Yokota",
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/namitoyokota/services"
+        "url": "https://github.com/namitoyokota/ng-services"
     },
     "peerDependencies": {
         "@angular/common": "^15.2.0",

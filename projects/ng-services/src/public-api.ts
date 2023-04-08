@@ -1,5 +1,5 @@
 /*
- * Public API Surface of services
+ * Public API Surface of ng-services
  */
 
 export * from './lib/services/firebase-authentication.service';

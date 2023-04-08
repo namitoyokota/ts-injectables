@@ -15,7 +15,7 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "paths": {
-            "@namitoyokota/services": ["dist/services"]
+            "@namitoyokota/ng-services": ["dist/ng-services"]
         },
         "importHelpers": true,
         "target": "ES2022",
