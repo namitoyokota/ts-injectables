@@ -12,8 +12,6 @@ import {
     User,
 } from 'firebase/auth';
 import { BehaviorSubject } from 'rxjs';
-import { FirebaseService } from '../firebase.service';
-import { NavigationService } from '../navigation.service';
 
 export class FirebaseAuthentication {
     /** Currently logged in user */
@@ -31,7 +29,7 @@ export class FirebaseAuthentication {
     /** Auth for Facebook */
     facebookAuthProvider: FacebookAuthProvider;
 
-    constructor(private firebaseService: FirebaseService, private navigationService: NavigationService) {
+    constructor() {
         this.googleAuthProvider = new GoogleAuthProvider();
         this.facebookAuthProvider = new FacebookAuthProvider();
     }
@@ -42,12 +40,8 @@ export class FirebaseAuthentication {
         onAuthStateChanged(auth, (user: User) => {
             if (user) {
                 this.currentUser.next(user);
-                this.firebaseService.mailbox.retrieveCollection.next(user.uid);
-                this.navigationService.goToHomePage();
             } else {
                 this.currentUser.next(null);
-                this.firebaseService.mailbox.clearCollection.next();
-                this.navigationService.goToSignInPage();
             }
         });
     }
@@ -164,7 +158,6 @@ export class FirebaseAuthentication {
         return new Promise((resolve, reject) => {
             deleteUser(userToDelete)
                 .then(() => {
-                    this.firebaseService.mailbox.deleteCollection.next(userToDelete.uid);
                     resolve();
                 })
                 .catch((error) => {

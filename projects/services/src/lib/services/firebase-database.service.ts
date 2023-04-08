@@ -1,19 +1,16 @@
 import { FirebaseApp, initializeApp } from 'firebase/app';
 import {
-    addDoc,
-    collection,
     CollectionReference,
-    deleteDoc,
     DocumentData,
     Firestore,
+    QuerySnapshot,
+    addDoc,
+    collection,
+    deleteDoc,
     getDocs,
     getFirestore,
-    QuerySnapshot,
     updateDoc,
 } from 'firebase/firestore/lite';
-import { Friend } from 'src/app/abstractions/friend';
-import { environment } from 'src/app/environments/environment';
-import { FriendStoreService } from '../friend-store.service';
 
 export class FirebaseDatabase {
     /** Flag to indicate when API call is being made */
@@ -34,7 +31,7 @@ export class FirebaseDatabase {
     /** Collection id for the current user */
     private collectionId: string;
 
-    constructor(private friendStoreService: FriendStoreService) {
+    constructor() {
         this.initialize();
     }
 
