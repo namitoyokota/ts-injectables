@@ -2,5 +2,4 @@
  * Public API Surface of services
  */
 
-export * from './lib/abstractions/test';
-export * from './lib/services/firebase.service';
+export * from './lib/services/google-sheets.service';

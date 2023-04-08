@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FirebaseService, Test } from '@namitoyokota/services';
+import { BudgetService } from './services/budget.service';
 
 @Component({
     selector: 'app-root',
@@ -7,8 +7,11 @@ import { FirebaseService, Test } from '@namitoyokota/services';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    test: Test = new Test();
-    firebase: FirebaseService = new FirebaseService();
+    constructor(private budgetService: BudgetService) {
+        this.budgetService.getRecords().then((budgets) => {
+            console.log(budgets);
+        });
+    }
 
     echo(text?: string, value?: string): void {
         console.log(text, value ? ': ' + value : '');
