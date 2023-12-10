@@ -22,8 +22,6 @@ Apache-2.0
 @firebase/util
 Apache-2.0
 
-@namitoyokota/ng-services
-
 firebase/auth
 
 idb
@@ -266,6 +264,8 @@ Apache-2.0
  limitations under the License.
  
 
+
+ts-injectables
 
 zone.js
 MIT
