@@ -17,8 +17,8 @@ jobs:
               uses: EndBug/version-check@v1
               id: check
               with:
-                  file-name: ./projects/ng-services/package.json
-                  file-url: https://unpkg.com/@namitoyokota/ng-services@latest/package.json
+                  file-name: ./projects/ts-injectables/package.json
+                  file-url: https://unpkg.com/ts-injectables@latest/package.json
                   static-checking: localIsNew
 
             - name: Version Update Detected
@@ -39,6 +39,6 @@ jobs:
 
             - name: Publish to NPM
               if: steps.check.outputs.changed == 'true'
-              run: npm publish ./dist/ng-services
+              run: npm publish ./dist/ts-injectables
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

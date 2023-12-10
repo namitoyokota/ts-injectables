@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GoogleSheetsService } from '@namitoyokota/ng-services';
+import { GoogleSheetsService } from 'ts-injectables';
 
 export interface Budget {
     category: string;

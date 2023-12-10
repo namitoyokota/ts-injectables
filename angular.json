@@ -27,7 +27,7 @@
                             "src/assets",
                             {
                                 "glob": "**/*",
-                                "input": "projects/ng-services/assets",
+                                "input": "projects/ts-injectables/assets",
                                 "output": "/assets"
                             }
                         ],
@@ -89,7 +89,7 @@
                             "src/assets",
                             {
                                 "glob": "**/*",
-                                "input": "projects/ng-services/assets",
+                                "input": "projects/ts-injectables/assets",
                                 "output": "/assets"
                             }
                         ],
@@ -99,23 +99,23 @@
                 }
             }
         },
-        "ng-services": {
+        "ts-injectables": {
             "projectType": "library",
-            "root": "projects/ng-services",
-            "sourceRoot": "projects/ng-services/src",
+            "root": "projects/ts-injectables",
+            "sourceRoot": "projects/ts-injectables/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/ng-services/ng-package.json"
+                        "project": "projects/ts-injectables/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/ng-services/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/ts-injectables/tsconfig.lib.prod.json"
                         },
                         "development": {
-                            "tsConfig": "projects/ng-services/tsconfig.lib.json"
+                            "tsConfig": "projects/ts-injectables/tsconfig.lib.json"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -123,7 +123,7 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "tsConfig": "projects/ng-services/tsconfig.spec.json",
+                        "tsConfig": "projects/ts-injectables/tsconfig.spec.json",
                         "polyfills": ["zone.js", "zone.js/testing"]
                     }
                 }

@@ -1,4 +1,4 @@
-# ts-injectables
+# NgServices
 
 [![Publish Package to NPM](https://github.com/namitoyokota/ts-injectables/actions/workflows/publish.yml/badge.svg)](https://github.com/namitoyokota/services/actions/workflows/publish.yml)
 

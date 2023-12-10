@@ -1,14 +1,14 @@
 {
-    "name": "@namitoyokota/ng-services",
-    "version": "0.0.7",
-    "description": "Angular service library for myself",
+    "name": "ts-injectables",
+    "version": "0.1.0",
+    "description": "TypeScript services to inject within components",
     "author": {
         "name": "Namito Yokota",
         "email": "namitoyokota@icloud.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/namitoyokota/ng-services"
+        "url": "https://github.com/namitoyokota/ts-injectables"
     },
     "peerDependencies": {
         "@angular/common": "^15.2.0",

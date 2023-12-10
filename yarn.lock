@@ -1900,9 +1900,9 @@
   dependencies:
     tslib "^2.3.0"
 
-"@namitoyokota/ng-services@latest":
+"@namitoyokota/ts-injectables@latest":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@namitoyokota/ng-services/-/services-0.0.1.tgz#d287d17da9e702b9053f266ce78b47b2ad29983c"
+  resolved "https://registry.yarnpkg.com/@namitoyokota/ts-injectables/-/services-0.0.1.tgz#d287d17da9e702b9053f266ce78b47b2ad29983c"
   integrity sha512-3e0KJR3gZCZgyAt20qDY+wuHrCvo0rtvwi7Dza1W2HDQl3EN0j74HQ/FCbd2SkH5bdXfDaUTQ+JFOgv6Up4Acw==
   dependencies:
     tslib "^2.3.0"

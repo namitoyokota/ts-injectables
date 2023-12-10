@@ -15,7 +15,7 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "paths": {
-            "@namitoyokota/ng-services": ["dist/ng-services"]
+            "@namitoyokota/ts-injectables": ["dist/ts-injectables"]
         },
         "importHelpers": true,
         "target": "ES2022",
